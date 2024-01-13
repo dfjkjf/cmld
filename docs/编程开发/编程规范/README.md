@@ -1,7 +1,7 @@
 ---
-sort: 2
+sort: 1
 ---
 
-# 计算机技术
+# 编程规范
 
 {% include list.liquid %}

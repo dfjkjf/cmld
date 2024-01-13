@@ -1,5 +1,5 @@
 title: RunDocs
-lang: en
+lang: zh_CN
 description: Extends the continuous integration documentation capabilities of GitHub pages for everyone!
 
 remote_theme: rundocs/jekyll-rtd-theme

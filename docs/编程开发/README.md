@@ -1,7 +1,7 @@
 ---
-sort: 2
+sort: 1
 ---
 
-# 计算机技术
+# 编程开发
 
 {% include list.liquid %}

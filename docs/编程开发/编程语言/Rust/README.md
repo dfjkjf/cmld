@@ -1,7 +1,7 @@
 ---
-sort: 2
+sort: 3
 ---
 
-# 计算机技术
+# Rust
 
 {% include list.liquid %}

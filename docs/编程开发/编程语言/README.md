@@ -2,6 +2,6 @@
 sort: 2
 ---
 
-# 计算机技术
+# 编程语言
 
 {% include list.liquid %}

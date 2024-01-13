@@ -1,8 +1,8 @@
 ---
-sort: 1
+sort: 3
 ---
 
-# Gem based method (stable)
+# C语言
 
 1.Add the following to your site's `Gemfile`
 
