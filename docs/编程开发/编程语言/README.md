@@ -1,7 +1,10 @@
 ---
-sort: 2
+sort: 1
 ---
 
 # 编程语言
 
-{% include list.liquid %}
+- [C](./C/README.md)
+- [C++](./C++/README.md)
+- [Rust](./Rust/README.md)
+- Python

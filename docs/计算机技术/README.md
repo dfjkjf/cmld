@@ -4,4 +4,4 @@ sort: 2
 
 # 计算机技术
 
-{% include list.liquid %}
+
