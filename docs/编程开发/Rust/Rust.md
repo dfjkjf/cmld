@@ -2,7 +2,7 @@
 sort: 3
 ---
 
-# C语言
+# Rust
 
 1.Add the following to your site's `Gemfile`
 

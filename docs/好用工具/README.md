@@ -1,7 +1,8 @@
 ---
-sort: 4
+sort: 2
 ---
 
-# Contributing
+# 常用命令
 
 {% include list.liquid %}
+
