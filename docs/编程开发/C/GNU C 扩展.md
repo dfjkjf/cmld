@@ -31,7 +31,7 @@ sort: 1
 
 ## 指定初始化
 
-```C
+```c
 /* 初始化数组 */
 int b[100] ={ [10] = 1, [11 ... 30] = 10, [50 ... 60] = 2， [90] = 2};
 
@@ -71,12 +71,12 @@ struct student{
 
 语句表达式最外面使用小括号()括起来，里面一对大括号{}包起来的是代码块，代码块里允许内嵌各种语句。语句的格式可以是 “表达式;”这种一般格式的语句，也可以是循环、跳转等语句。
 
-```C
+```c
 ({ 表达式1; 表达式2; 表达式3; })
 ```
 
 语句表达式的值总等于最后一个表达式的值。
-```C
+```c
 sum = 
     ({
         int s = 0;
@@ -88,7 +88,7 @@ sum =
 
 ## 零长度数组
 
-```C
+```c
 int len;
 int a[len]; // 变长数组
 
@@ -99,7 +99,7 @@ int b[0];   // 零长度数组，sizeof(b) == 0
 
 它常常作为结构体的一个成员，构成一个变长结构体
 
-```C
+```c
 struct buffer{
     int len;
     int a[0];
@@ -113,7 +113,7 @@ strcpy(buf->a, "hello world!\n");
 ## typeof关键字
 
 - 例子：
-```C
+```c
 int i ;
 typeof(i) j = 2; // int j = 2;
 
@@ -133,20 +133,20 @@ typeof(f()) k; // int k;
 
 ## offsetof
 
-```C
+```c
 #define offsetof(TYPE, MEMBER) ((size_t) &((TYPE *)0)->MEMBER)
 ```
 
 ## container_of
 
-```C
+```c
 #define  container_of(ptr, type, member) ({    \
      const typeof( ((type *)0)->member ) *__mptr = (ptr); \
      (type *)( (char *)__mptr - offsetof(type,member) ); \
 })
 ```
 - 例子：
-```C
+```c
 struct student
 {
     char *name;
@@ -166,7 +166,7 @@ int main(void)
 ## atttribute
 
 声明属性：
-```C
+```c
 section // 将一个函数或变量放到指定的段
 aligned // 显式指定一个变量的存储边界对齐方式，一般用来增大变量的地址对齐
 packed  // 显式指定一个变量的存储边界对齐方式，使用最可能小的地址对齐方式
@@ -180,7 +180,7 @@ always_inline // 指定的函数内联展开
 **属性声明要紧挨着变量**
 
 ### aligned & packed
-```C
+```c
 int uninit_val __attribute__((section(".data")));
 
 char c1 __attribute__((aligned(8)) = 4;
