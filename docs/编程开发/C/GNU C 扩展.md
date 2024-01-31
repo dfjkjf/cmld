@@ -1,5 +1,5 @@
 ---
-sort: 1
+sort: 2
 ---
 
 
@@ -14,6 +14,7 @@ sort: 1
 | | |
 | **关键字** |  |
 | `typeof` | 获取一个变量或表达式的类型 |
+| `__alignof__` | 获取一个变量或表达式的内存对齐量 |
 | | |
 | **宏** |  |
 | `offsetof(TYPE, MEMBER)` | 计算结构体某一成员在结构体内的偏移 |
@@ -129,6 +130,28 @@ typeof(f()) k; // int k;
     (void) (&_x == &_y);     /* warning：comparison of distinct pointer types lacks a cast */ \
     _x > _y ? _x : _y;       \
 })
+```
+
+## __alignof__关键字
+
+- 例子：
+```c
+struct ship
+{
+    int year_built;
+    char canons;
+    int mast_height;
+}__attribute__((aligned(4)));
+struct ship2
+{
+    int year_built;
+    char canons __attribute__((aligned(4)));
+    int mast_height;
+};
+
+printf ("%lu\n", __alignof__(ship.canons));  // 1
+printf ("%lu\n", __alignof__(ship2.canons)); // 4
+
 ```
 
 ## offsetof
@@ -468,7 +491,7 @@ $ arm-linux-gnueabi-objdump -D a.out
 
 通过反汇编代码可以看到，因为我们对 func() 函数作了 always_inline 属性声明，所以编译器在编译过程中，对于 main()函数调用 func()，会直接在调用处展开。
 
-```
+```c
 10470:    e3a03003    mov r3, #3
    10474:    e50b3008    str r3, [fp, #-8]
    10478:    e51b3008    ldr r3, [fp, #-8]
