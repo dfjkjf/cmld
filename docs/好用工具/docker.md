@@ -9,11 +9,11 @@ sort: 12
 - [推荐](https://docs.docker.com/desktop/install/ubuntu/)
 - [普通](https://docs.docker.com/engine/install/ubuntu/)
 
-## 以nodered为例学习docker
+## 以nodered为例使用docker
 
 `docker run -it -p 18800:1880 -v node_red_data:/data --name mynodered nodered/node-red:latest`
 
-```yaml
+```bash
 docker run              在 Docker 环境中运行一个容器。
 -it                     交互式终端 (interactive terminal)。
 -d                      后台运行 (daemon mode)。
@@ -30,15 +30,17 @@ nodered/node-red        镜像名称 (image name)。此标志指定要运行的 
     - `docker cp  mynodered:/data /your/backup/dir`
     - `docker cp ./install.txt mynodered:/data`
     - `docker volume rm node_red_data`
-
 - 分离终端：`Ctrl-p + Ctrl-q`
 - 重新连接到终端：`docker attach mynodered`
-
 - 更新容器：
     - `docker stop mynodered`
     - `docker rm mynodered`
     - `docker run -d -p 1880 -v node_red_data:/data --name mynodered nodered/node-red`
     - `docker ps`
-
-- 在正在运行的容器中执行命令：
+- 重启容器：
+    - `docker ps -a`
+    - `docker start mynodered`
+- 容器中启动新终端：
     - `docker exec -it mynodered /bin/bash`
+
+
