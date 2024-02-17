@@ -1,7 +1,7 @@
 ---
-sort: 5
+sort: 3
 ---
 
-# Rust
+# Python
 
 {% include list.liquid %}
