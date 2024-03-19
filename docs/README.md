@@ -9,7 +9,7 @@
 - [系统编程](./系统编程/README.md)
 - [网络编程](./网络编程/README.md)
 - 专向
-    - DDS
+    - [DDS](./DDS/README.md)
     - TMPP
 - 技术探索
 
