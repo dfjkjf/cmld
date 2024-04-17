@@ -7,9 +7,11 @@ sort: 1
 - [C](./C/README.md)
 - [C++](./C++/README.md)
 - [Rust](./Rust/README.md)
-- Python
+- [Python](./Python/README.md)
+- [UML](./UML/README.md)
 
-# 规范
+
+## 规范
 
 1. 创建线上git仓库
 1. vscode ssh连接远程Linux
