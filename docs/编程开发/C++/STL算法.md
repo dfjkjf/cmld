@@ -15,33 +15,33 @@ sort: 9
 | 算法 | 参数 | 作用 |
 | --- | --- | --- |
 | **遍历** |  |  |
-| void for_each(iterator beg, iterator end, func()) | `beg`//起始迭代器</br>`end`//结束迭代器</br>`func()`//函数或函数对象 | 遍历容器 |
-| void transform(iterator beg1, iterator end1, iterator beg2, func()) | `beg1`//源容器开始迭代器</br>`end1`//源容器结束迭代器</br>`beg2`//目标容器开始迭代器</br>`func`//函数或函数对象 | 搬运容器 |
+| void for_each(iterator beg, iterator end, func()) | `beg`//起始迭代器<br>`end`//结束迭代器<br>`func()`//函数或函数对象 | 遍历容器 |
+| void transform(iterator beg1, iterator end1, iterator beg2, func()) | `beg1`//源容器开始迭代器<br>`end1`//源容器结束迭代器<br>`beg2`//目标容器开始迭代器<br>`func`//函数或函数对象 | 搬运容器 |
 | **查找** |  |  |
-| iterator find(iterator beg, iterator end, value) | `beg`//起始迭代器</br>`end`//结束迭代器</br>`value`//查找的元素 | 按值查找 |
-| iterator find_if(iterator beg, iterator end, func()) | `beg`//起始迭代器</br>`end`//结束迭代器</br>`func()`//函数或谓词（返回bool的仿函数） | 条件查找 |
-| adjacent_find(iterator beg, iterator end) | `beg`//起始迭代器</br>`end`//结束迭代器 | 查找相邻重复元素 |
-| bool binary_search(iterator beg, iterator end, value) | `beg`//起始迭代器</br>`end`//结束迭代器</br>`value`//查找的元素 | 二分查找 |
-| int count(iterator beg, iterator end, value) | `beg`//起始迭代器</br>`end`//结束迭代器</br>`value`//查找的元素 | 统计元素个数 |
-| int count_if(iterator beg, iterator end, func()) | `beg`//起始迭代器</br>`end`//结束迭代器</br>`func()`//函数或谓词（返回bool的仿函数） | 按条件统计元素个数 |
+| iterator find(iterator beg, iterator end, value) | `beg`//起始迭代器<br>`end`//结束迭代器<br>`value`//查找的元素 | 按值查找 |
+| iterator find_if(iterator beg, iterator end, func()) | `beg`//起始迭代器<br>`end`//结束迭代器<br>`func()`//函数或谓词（返回bool的仿函数） | 条件查找 |
+| adjacent_find(iterator beg, iterator end) | `beg`//起始迭代器<br>`end`//结束迭代器 | 查找相邻重复元素 |
+| bool binary_search(iterator beg, iterator end, value) | `beg`//起始迭代器<br>`end`//结束迭代器<br>`value`//查找的元素 | 二分查找 |
+| int count(iterator beg, iterator end, value) | `beg`//起始迭代器<br>`end`//结束迭代器<br>`value`//查找的元素 | 统计元素个数 |
+| int count_if(iterator beg, iterator end, func()) | `beg`//起始迭代器<br>`end`//结束迭代器<br>`func()`//函数或谓词（返回bool的仿函数） | 按条件统计元素个数 |
 | **排序** |  |  |
-| sort(iterator beg, iterator end, func) | `beg`//起始迭代器</br>`end`//结束迭代器</br>`func()`//函数或者谓词，可填可不填，不填则默认升序排列 | 对容器内元素进行排序 |
-| random_shuffle(iterator beg, iterator end) | `beg`//起始迭代器</br>`end`//结束迭代器 | 随机洗牌 |
-| merge(iterator beg1, iterator end1, iterator beg2, iterator end2, dest) | `beg1`//容器1开始迭代器</br>`end1`//容器1结束迭代器</br>`beg2`//容器2开始迭代器</br>`end2`//容器2结束迭代器</br>`dest`//目标容器开始迭代器 | 将两个有序容器元素合并，并储存到另一个容器中 |
-| reverse(iterator beg, iterator end) | `beg`//起始迭代器</br>`end`//结束迭代器 | 反转指定范围的元素 |
+| sort(iterator beg, iterator end, func) | `beg`//起始迭代器<br>`end`//结束迭代器<br>`func()`//函数或者谓词，可填可不填，不填则默认升序排列 | 对容器内元素进行排序 |
+| random_shuffle(iterator beg, iterator end) | `beg`//起始迭代器<br>`end`//结束迭代器 | 随机洗牌 |
+| merge(iterator beg1, iterator end1, iterator beg2, iterator end2, dest) | `beg1`//容器1开始迭代器<br>`end1`//容器1结束迭代器<br>`beg2`//容器2开始迭代器<br>`end2`//容器2结束迭代器<br>`dest`//目标容器开始迭代器 | 将两个有序容器元素合并，并储存到另一个容器中 |
+| reverse(iterator beg, iterator end) | `beg`//起始迭代器<br>`end`//结束迭代器 | 反转指定范围的元素 |
 | **拷贝** |  |  |
-| copy(iterator beg, iterator end, iterator dest) | `beg`//起始迭代器</br>`end`//结束迭代器</br>`dest`//目标容器开始迭代器 | 容器内指定范围的元素拷贝到另一个容器中 |
+| copy(iterator beg, iterator end, iterator dest) | `beg`//起始迭代器<br>`end`//结束迭代器<br>`dest`//目标容器开始迭代器 | 容器内指定范围的元素拷贝到另一个容器中 |
 | **替换** |  |  |
-| replace(iterator beg, iterator end, oldvalue, newvalue) | `beg`//起始迭代器</br>`end`//结束迭代器</br>`oldvalue`//旧元素</br>`newvalue`//新元素 | 将容器内指定范围的旧元素修改为新元素 |
-| replace_if(iterator beg, iterator end, func, newvalue) | `beg`//起始迭代器</br>`end`//结束迭代器</br>`func()`//函数或者谓词</br>`oldvalue`//旧元素 | 将容器内满足条件的旧元素修改为新元素 |
-| swap(container c1, container c2) | `c1`//容器1</br>`c2`//容器2 | 互换两个的容器元素 |
+| replace(iterator beg, iterator end, oldvalue, newvalue) | `beg`//起始迭代器<br>`end`//结束迭代器<br>`oldvalue`//旧元素<br>`newvalue`//新元素 | 将容器内指定范围的旧元素修改为新元素 |
+| replace_if(iterator beg, iterator end, func, newvalue) | `beg`//起始迭代器<br>`end`//结束迭代器<br>`func()`//函数或者谓词<br>`oldvalue`//旧元素 | 将容器内满足条件的旧元素修改为新元素 |
+| swap(container c1, container c2) | `c1`//容器1<br>`c2`//容器2 | 互换两个的容器元素 |
 | **算术** |  |  |
-| accumulate(iterator beg, iterator end, value) | `beg`//起始迭代器</br>`end`//结束迭代器</br>`value`//起始值 | 计算容器元素累计总和 |
-| fill(iterator beg, iterator end, value) | `beg`//起始迭代器</br>`end`//结束迭代器</br>`value`//填充的值 | 向容器中添加元素 |
+| accumulate(iterator beg, iterator end, value) | `beg`//起始迭代器<br>`end`//结束迭代器<br>`value`//起始值 | 计算容器元素累计总和 |
+| fill(iterator beg, iterator end, value) | `beg`//起始迭代器<br>`end`//结束迭代器<br>`value`//填充的值 | 向容器中添加元素 |
 | **集合** |  |  |
-| set_intersection(iterator beg1, iterator end1, iterator beg2, iterator end2, iterator dest) | `beg1`//容器1开始迭代器</br>`end1`//容器1结束迭代器</br>`beg2`//容器2开始迭代器</br>`end2`//容器2结束迭代器</br>`dest`//目标容器开始迭代器 | 求两个容器的交集 |
-| set_union(iterator beg1, iterator end1, iterator beg2, iterator end2, iterator dest) | `beg1`//容器1开始迭代器</br>`end1`//容器1结束迭代器</br>`beg2`//容器2开始迭代器</br>`end2`//容器2结束迭代器</br>`dest`//目标容器开始迭代器 | 求两个容器的并集 |
-| set_difference(iterator beg1, iterator end1, iterator beg2, iterator end2, iterator dest) | `beg1`//容器1开始迭代器</br>`end1`//容器1结束迭代器</br>`beg2`//容器2开始迭代器</br>`end2`//容器2结束迭代器</br>`dest`//目标容器开始迭代器 | 求两个容器的差集 |
+| set_intersection(iterator beg1, iterator end1, iterator beg2, iterator end2, iterator dest) | `beg1`//容器1开始迭代器<br>`end1`//容器1结束迭代器<br>`beg2`//容器2开始迭代器<br>`end2`//容器2结束迭代器<br>`dest`//目标容器开始迭代器 | 求两个容器的交集 |
+| set_union(iterator beg1, iterator end1, iterator beg2, iterator end2, iterator dest) | `beg1`//容器1开始迭代器<br>`end1`//容器1结束迭代器<br>`beg2`//容器2开始迭代器<br>`end2`//容器2结束迭代器<br>`dest`//目标容器开始迭代器 | 求两个容器的并集 |
+| set_difference(iterator beg1, iterator end1, iterator beg2, iterator end2, iterator dest) | `beg1`//容器1开始迭代器<br>`end1`//容器1结束迭代器<br>`beg2`//容器2开始迭代器<br>`end2`//容器2结束迭代器<br>`dest`//目标容器开始迭代器 | 求两个容器的差集 |
 
 
 
