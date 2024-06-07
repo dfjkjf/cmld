@@ -61,7 +61,7 @@ STL 的基本观念就是将数据和操作分离。数据由容器进行管理�
 
 示意图如下图所示：
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/cee8578247fa432ba376c5f878b5c693~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1000&h=486&s=120675&e=png&b=cfcfcf)
+![Containers.png](./images/containers.png)
 
 ### **2.1 vector**
 
@@ -283,9 +283,9 @@ int main(void)
     q.push(T(3,3,6));
     while(!q.empty())
     {
-            T t=q.top();
-            q.pop();
-            cout<<t.x<<" "<<t.y<<" "<<t.z<<endl;
+        T t=q.top();
+        cout<<t.x<<" "<<t.y<<" "<<t.z<<endl;
+        q.pop();
     }
     return 0;
 }
