@@ -4,6 +4,21 @@ sort: 1
 
 # Interview
 
+## 安装python
+
+1. 安装 Python、pip 和 venv
+```py
+sudo apt upgrade python3
+sudo apt install python3-pip   # 安装和管理不属于 Python 标准库的其他包
+sudo apt install python3-venv  # 用于创建和管理轻型虚拟环境的标准模块
+```
+2. 通过创建虚拟环境，可以将项目工具隔离开来，避免与其他项目的工具发生版本冲突。
+- 打开终端，在 HelloWorld 项目文件夹中，使用以下命令创建名为 .venv 的虚拟环境：`python3 -m venv .venv`。
+- 激活虚拟环境：`source .venv/bin/activate`。 如果它已正常工作，则应该在命令提示符之前看到 (.venv)。 现在已准备好了一个可用于编写代码和安装包的独立环境。 
+- 使用完虚拟环境后，输入以下命令可停用它：deactivate。
+
+![venv](./images/wsl-venv.png)
+
 ## Variables
 
 ```python
