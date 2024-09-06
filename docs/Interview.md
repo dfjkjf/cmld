@@ -1,8 +1,67 @@
 ---
 sort: 1
 ---
+# 技术要求总结
 
-# 自我介绍
+奇瑞
+1. 面向辅助/自动驾驶等领域，参与智驾系统中间件和软件框架开发。
+2. 针对智驾业务特点，对中间件进行性能评估和优化，确保业务和产品落地。
+任职要求：
+①学历:大学本科及以上学历: 计算机科学与技术/电子信息工程/电子信息科学与技术/电气工程及自动化/智能驾驶/人工智能/软件工程/电子等相关专业
+②工作经验: 
+   a. 5年及以上Linux/QNX软件开发经验；
+   b. 有智能座舱、自动驾驶相关软件开发经验者优先。
+③技术能力: 
+   a. 精通C++语言， 熟练掌握C++11及以上新特性。
+   b. 深入理解CyberRT, ROS2，iceroyx等开源中间件软件，具备其上具体开发经验者优先。
+   c. 了解AP AUTOSAR。
+   d. 熟悉DDS, SOMEIP等网络通信协议，有具体开发经验者优先。
+   e. 熟悉中间件关键技术如内存池，线程池，ringbuffer等。
+
+外企
+•	Bachelor or Master degree in computer science, electrical engineering or comparable qualification
+•	＞3 years of Experience in the area of SW development in embedded systems
+•	Programming skills in C++
+•	Experience in processor based architecture, Adaptive/Classic AUTOSAR
+•	Experience in ECU development with AUTOSAR and/or Embedded Linux/POSIX
+•	Object Oriented Programming (OOP, OOA, OOD) -C++ (11/14), Python
+•	Experience with communication middleware (CORBA, REST, DDS, SOME/IP)
+•	TCP/IP configuration (ifconfig, route, bridge, tap, VLAN, etc.)
+•	Build Systems (Make, CMake, Bazel)
+•	Automotive know about Signal-based communication (CAN, LIN, FlexRay, ETH and SOME/IP)
+•	Good exposure of Functional Safety in Adaptive AUTOSAR
+•	Embedded Linux/POSIX know-how QNX, Yocto etc
+
+科博达
+1. 全日制本科及以上学历，3年及以上嵌入式软件研发经验；
+2. 精通C/C++，精通网络编程，多线程编程；
+3. 精通Linux，对OS功能有较深了解，对OS调度算法及进程间通信有深刻理解者优先；
+4. 熟悉ROS/DDS/Iceoryx/SOMEIP中的一种或多种，熟悉SOA概念；
+5. 熟悉至少一种序列化或反序列化方案；
+6. 熟悉车载软件中间件模块需求；
+7. 有相关工作车载领域智能驾驶量产经验者优先；
+8. 开放务实心态，积极拥抱变化，愿意持续学习和知识分享；
+
+猎头
+1、本科或以上学历，汽车电子、通信工程及计算机信息等相关专业背景优先;
+2、具备2年以上嵌入式开发经验；具备无人车或机器人等项目测试经验者优先;
+3、熟悉linux或QNX开发，熟练多线程编程、进程间通信、网络编程等；
+4、扎实的计算机基础理论知识，具备较强的工程研发能力；
+5、熟悉设计模式中的pub/sub模式和RPC通信模式，具备良好编程风格，熟悉C++开发调试工具链，gcc、cmake、gdb等，熟悉SOA架构，有ROS/ROS2开发经验者优先；
+6、掌握至少一种C++环境的通讯中间件，如gRPC/DDS/TSN等，对其中至少一种有实际使用经验，有通讯中间件产品的开发实践经验；
+7. 英语CET-4级或以上，能阅读外文资料；
+
+智鉴
+1、负责中间件通信模块的开发和维护，并保证其可靠性、实时性、稳定性、高性能；
+2、负责通信模块的自诊断和性能分析工具的开发维护；
+3、支持量产项目交付；
+
+1、全日制本科及以上学历，至少三年以上相关工作经验（必须项）
+2、熟悉以下车载通信协议的一种或多种：DDS/SOMEIP/ZMQ/SHM（必须项）
+3、具备DDS设计/开发经验，熟悉DDS底层原理；使用并研究过以下DDS的一种或多种：eProsima Fast DDS、RTI Connext、Eclipse iceoryx等；
+4、熟练掌握C++，熟练掌握各种调试手段和系统调试工具
+
+## 自我介绍
 
 自我介绍大家可以参考这个模板：**我是谁+从哪里来+我做过什么+有什么成绩+为什么能胜任**。
 
@@ -60,3 +119,5 @@ tips：
 
 1. 多播通信、单播修复
 2. 
+
+负责产品销售后的服务支持，包括产品安装、调试、培训、故障排除和升级等。具备良好的问题解决能力和客户服务意识，保证客户能够顺畅使用产品。
