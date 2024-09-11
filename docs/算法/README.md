@@ -1,7 +1,9 @@
 ---
-sort: 7
+sort: 2
 ---
 
-# 前端开发
+# 算法
+
+Hot100
 
 {% include list.liquid %}
