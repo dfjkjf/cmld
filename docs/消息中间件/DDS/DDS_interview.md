@@ -17,6 +17,7 @@ sort: 9
 6. DDS中的“历史数据”（History）和“资源限制”（Resource Limits）QoS策略有什么作用？
 7. 请解释DDS中的“可靠性”（Reliability）QoS策略是如何工作的。
 8. 在DDS中，如何实现不同节点之间的时间同步？
+9. Samples与Instance之间的区联系
 
 ### 实践经验类
 9. 请描述一次您使用DDS技术解决实际问题的经历，包括您所面临的挑战和解决方案。
