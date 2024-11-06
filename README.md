@@ -1,3 +1,3 @@
 # CMLD
 
-test gh-pages
+classic gh-pages
