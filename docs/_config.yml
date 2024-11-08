@@ -2,7 +2,7 @@ title: CMLD
 lang: en
 description: Code my learned
 
-remote_theme: rundocs/jekyll-rtd-theme
+remote_theme: clearpathrobotics/jekyll-rtd-theme
 
 readme_index:
   with_frontmatter: true
