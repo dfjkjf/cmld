@@ -1,8 +1,64 @@
 ---
-sort: 2
+sort: 1
 ---
 
-# 7  Overview  
+# Overview
+
+## 1  Scope  
+
+This specification defines an interoperability wire protocol for DDS. Its purpose and scope are to ensure that  applications based on different vendors’ implementations of DDS can interoperate.  
+
+## 2  Conformance  
+
+Implementations of this specification must comply with the conformance statements listed in 8.4.2 of this  specification.  
+
+## 3  Normative References  
+
+The following normative documents contain provisions which, through reference in this text, constitute  provisions of this specification. For dated references, subsequent amendments to, or revisions of, any of these  publications do not apply.  
+
+[1] DDS Specification v1.4 (OMG document formal/15-04-10)  [2] Interface Definition Language (IDL) v4.2 ( https://www.omg.org/spec/IDL )  [3] Extensible and Dynamic Topic Types for DDS v1.2 ( https://www.omg.org/spec/DDS-XTypes )  [4] Network Time Protocol (Version 3) (IETF RFC 1305,  https://www.ietf.org/rfc/rfc1305.txt )  [5] The MD5 Message-Digest Algorithm (IETF RFC 1321,  https://www.ietf.org/rfc/rfc1321.txt )  
+
+## 4  Terms and Definitions  
+
+For the purposes of this specification, the terms and definitions given in the normative references apply.  
+
+## 5  Symbols  
+
+CDR  Common Data Representation  
+
+DDS  Data Distribution Service  EDP  Endpoint Discovery Protocol   GUID  Globally Unique Indent i fier   PDP  Participant Discovery Protocol  PIM  Platform Independent Model  PSM  Platform Specific Model   RTPS  Real-Time Publish-Subscribe  SEDP  Simple Endpoint Discovery Protocol  
+This page intentionally left blank. 
+
+## 6  Additional Information  
+
+### 6.1  Changes to Adopted OMG Specifications  
+
+This specification does not change any adopted OMG specifications. It forms a supplement to the OMG DDS  specification (see  https://www.omg.org/spec/DDS/1.4/ ).  
+
+### 6.2  How to Read this Specification  
+
+This specification defines the DDS Interoperability Protocol. Readers not familiar with DDS will benefit from  first reading the DDS specification.  
+
+For a very high-level overview of RTPS (Real-Time Publish-Subscribe) and a brief description of the structure  of this document, please refer to the Introduction. Subsequent clauses cover RTPS in much greater detail.  
+
+While providing both a PIM (Platform Independent Model) and a PSM (Platform Specific Model) contributed  to the size of this document, this approach also enables a selective reader to easily pick the sub clauses of  interest:  
+
+•   Readers who are new to RTPS can start by reading the Structure and Messages Modules of the  PIM. These Modules provide an overview of the RTPS protocol actors, how they relate to DDS  Entities, what RTPS messages exist and how they are structured.  •   Readers who would like to explore the RTPS message exchange protocol can read the first part  of the Behavior Module. RTPS is a fairly flexible protocol and allows implementations to  customize their behavior depending on how much ‘state’ they wish to keep on remote Endpoints.  The first part of the Behavior Module lists the general requirements any compliant  implementation of RTPS must satisfy to remain interoperable with other  implementations.  •   The second part of the Behavior Module defines two reference implementations. One reference  implementation maintains full state on remote Endpoints, the other none. This sub clause may be  of interest to readers who want a more detailed understanding of the RTPS message exchange  protocol, but it could easily be skipped by first-time readers.  •   Readers interested in how RTPS handles dynamic discovery of remote Endpoints are referred to  the stand-alone Discovery Module.  •   For readers planning on implementing RTPS or defining a new PSM, the PSM Clause contains a  detailed discussion on how the RTPS PIM is mapped to the UDP/IP PSM.  •   Finally, the clause on data representation defines various data representation mechanisms for use  with RTPS.  
+
+### 6.3  Acknowledgments  
+
+The following companies submitted and/or supported parts of this specification:  
+
+•   Real-Time Innovations, Inc.  •   THALES  •   PrismTech  
+
+### 6.4  Statement of Proof of Concept  
+
+The protocol specified in this proposal has proven its performance and applicability to data-distribution systems.  The protocol is the one used by Real-Time Innovation's implementation of DDS which had been deployed in  hundreds of applications worldwide in the 5 years prior to this specification being initially adopted.  
+
+The protocol in this document also forms part of the IEC Real-Time Industrial Ethernet Suite IEC-PAS-62030  IEC standard, showing its applicability to the demanding real-time and resource-constrained industrial-control  environment.  
+The protocol has been independently implemented by other middleware providers such as Schneider Electric  and the University of Prague, proving the completeness and self-consistency of the specification.  
+
+## 7  Overview  
 
 ## 7.1  Introduction  
 
